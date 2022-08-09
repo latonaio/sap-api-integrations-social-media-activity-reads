@@ -31,7 +31,7 @@ sap-api-integrations-social-media-activity-reads において、API への値入
 
 ### SDC レイアウト
 
-* inoutSDC.SocialMediaActivityCollection.ID（ID）  
+* inoutSDC.SocialMediaActivityCollection.ID（ID）
 
 
 ## SAP API Bussiness Hub の API の選択的コール
@@ -90,7 +90,7 @@ func (c *SAPAPICaller) AsyncGetSocialMediaActivity(iD string, accepter []string)
 ## Output  
 本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
 以下の sample.json の例は、SAP ソーシャルメディア活動 のソーシャルメディア活動データ が取得された結果の JSON の例です。  
-以下の項目のうち、"ObjectID" ～ "EntityLastChangedOn" は、/SAP_API_Output_Formatter/type.go 内 の Type SocialMediaActivityCollection {} による出力結果です。"cursor" ～ "time"は、golang-logging-library-for-sap による 定型フォーマットの出力結果です。  
+以下の項目のうち、"ObjectID" ～ "SocialMediaActivityProviderID" は、/SAP_API_Output_Formatter/type.go 内 の Type SocialMediaActivityCollection {} による出力結果です。"cursor" ～ "time"は、golang-logging-library-for-sap による 定型フォーマットの出力結果です。  
 
 ```
 {
@@ -125,6 +125,6 @@ func (c *SAPAPICaller) AsyncGetSocialMediaActivity(iD string, accepter []string)
 			"SocialMediaActivityProviderID": "FB"
 		}
 	],
-	"time": "2022-08-04T14:04:59+09:00"
+	"time": "2022-08-09T14:42:21+09:00"
 }
 ```

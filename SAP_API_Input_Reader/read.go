@@ -22,7 +22,7 @@ func (*FileReader) ReadECMC(path string) EC_MC {
 	ec := EC_MC{}
 	err = json.Unmarshal(raw, &ec)
 	if err != nil {
-			fmt.Printf("input data marshal error :%#v", err.Error())
+		fmt.Printf("input data marshal error :%#v", err.Error())
 		os.Exit(1)
 	}
 
